@@ -1,32 +1,32 @@
 export const projects = [
   {
-    title: "Sistema de Gestão de Clientes",
+    title: "Dra. Aurora Silva - Psicóloga Clínica",
     problem:
-      "Aplicação Full Stack para cadastro, organização e acompanhamento de clientes em uma operação comercial.",
+      "Website institucional e profissional desenvolvido para psicóloga, focado em estabelecer presença digital estruturada e captação de pacientes.",
     description:
-      "Centraliza dados de clientes, melhora o controle de atendimentos e reduz o trabalho manual da equipe.",
-    technologies: ["Next.js", "Node.js", "Prisma", "MySQL"],
-    demoUrl: "#contact",
-    githubUrl: "https://github.com/matheuscorreiadev",
+      "Apresenta o perfil profissional, áreas de especialidade e abordagem terapêutica, contando com um fluxo direto de agendamento focado na experiência do usuário.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Google Maps incorporado por iframe"],
+    demoUrl: "https://matheuscorreiadev.github.io/AuroraSilvaPsi",
+    githubUrl: "https://github.com/matheuscorreiadev/AuroraSilvaPsi",
   },
   {
-    title: "Dashboard Financeiro",
+    title: "DeliveryGo",
     problem:
-      "Painel responsivo para visualizar receitas, despesas e indicadores importantes em tempo real.",
+      "Aplicação de entrega rápida desenvolvida para otimizar a escolha de produtos, gerenciamento de carrinho e fluxo de pedidos de forma ágil.",
     description:
-      "Ajuda pequenos negócios a entenderem a saúde financeira com gráficos claros e navegação objetiva.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "REST APIs"],
-    demoUrl: "#contact",
-    githubUrl: "https://github.com/matheuscorreiadev",
+      "Interface fluida e responsiva que simula a experiência completa de um app de delivery, priorizando a velocidade de carregamento e a usabilidade do usuário.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "localStorage"],
+    demoUrl: "https://matheuscorreiadev.github.io/DeliveryGo",
+    githubUrl: "https://github.com/matheuscorreiadev/DeliveryGo",
   },
   {
-    title: "API de Produtos e Pedidos",
+    title: "FinanceFlow",
     problem:
-      "API REST para gerenciar catálogo, estoque e pedidos com validações e persistência em banco de dados.",
+      "Plataforma para gerenciamento financeiro pessoal desenvolvida para resolver a falta de controle sobre receitas, despesas e planejamento de orçamentos.",
     description:
-      "Fornece uma base escalável para sistemas administrativos, e-commerces e integrações internas.",
-    technologies: ["Node.js", "Express.js", "Prisma", "PostgreSQL"],
-    demoUrl: "#contact",
-    githubUrl: "https://github.com/matheuscorreiadev",
+      "Permite o registro e categorização de movimentações financeiras, gerando um histórico claro que ajuda o usuário a entender seus hábitos de consumo e poupar com inteligência.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    demoUrl: "https://matheuscorreiadev.github.io/Finance-Flow",
+    githubUrl: "https://github.com/matheuscorreiadev/Finance-Flow",
   },
 ];

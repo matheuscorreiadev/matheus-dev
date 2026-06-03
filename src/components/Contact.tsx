@@ -37,7 +37,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/matheuscorreiacode"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg border border-white/15 px-6 py-3 font-bold text-white transition hover:border-cyan-300/60"
