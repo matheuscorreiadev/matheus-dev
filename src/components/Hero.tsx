@@ -22,9 +22,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex rounded-full border border-cyan-400/25 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-200"
+            className="inline-flex rounded-full border border-cyan-400/25 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-200 font-mono"
           >
-            Portfolio Full Stack
+            console.log("Hello, World! 🚀");
           </motion.span>
 
           <motion.h1
@@ -103,28 +103,45 @@ export default function Hero() {
             <span className="h-3 w-3 rounded-full bg-emerald-400" />
           </div>
 
-          <div className="space-y-4 pt-6 font-mono text-sm text-zinc-300">
+          <div className="space-y-4 pt-6 font-mono text-sm text-zinc-300 select-none whitespace-pre-wrap break-words overflow-hidden">
             <p>
-              <span className="text-cyan-300">const</span> developer = {"{"}
+              <span className="text-purple-400">const</span>{" "}
+              <span className="text-blue-400">developer</span> = {"{"}
             </p>
+            
             <p className="pl-5">
-              stack:{" "}
-              <span className="text-emerald-300">
-                [&quot;React&quot;, &quot;Next.js&quot;, &quot;Node.js&quot;]
-              </span>
-              ,
+              <span className="text-cyan-400">name</span>:{" "}
+              <span className="text-emerald-300">&quot;Matheus Correia&quot;</span>,
             </p>
+
             <p className="pl-5">
-              focus:{" "}
-              <span className="text-emerald-300">
-                &quot;performance e valor real&quot;
-              </span>
-              ,
+              <span className="text-cyan-400">role</span>:{" "}
+              <span className="text-emerald-300">&quot;Full Stack Developer&quot;</span>,
             </p>
+
+            <p className="pl-5 flex flex-wrap gap-x-1">
+              <span className="text-cyan-400">stack</span>: [
+              <span className="text-emerald-300">&quot;React&quot;</span>,{" "}
+              <span className="text-emerald-300">&quot;Next.js&quot;</span>,{" "}
+              <span className="text-emerald-300">&quot;Node.js&quot;</span>,{" "}
+              <span className="text-emerald-300">&quot;MySQL&quot;</span>
+              ],
+            </p>
+
+            <p className="pl-5 flex flex-wrap gap-x-1">
+              <span className="text-cyan-400">focus</span>: [
+              <span className="text-emerald-300">&quot;Clean Code&quot;</span>,{" "}
+                <span className="text-emerald-300">&quot;Scalability&quot;</span>,{" "}
+              <span className="text-emerald-300">&quot;Performance&quot;</span>
+              ],
+            </p>
+
             <p className="pl-5">
-              status: <span className="text-emerald-300">&quot;available&quot;</span>
+              <span className="text-cyan-400">openToWork</span>:{" "}
+              <span className="text-amber-400">true</span>
             </p>
-            <p>{"}"}</p>
+
+            <p>{"}"};</p>
           </div>
         </motion.div>
       </div>

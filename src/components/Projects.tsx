@@ -30,7 +30,7 @@ export default function Projects() {
                   />
                 ) : null}
                 <span className="relative z-10 rounded-md bg-black/40 px-3 py-2 text-xs font-semibold uppercase tracking-widest text-cyan-200">
-                  Full Stack
+                  DEVELOPMENT
                 </span>
               </div>
 

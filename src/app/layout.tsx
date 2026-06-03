@@ -7,7 +7,7 @@ import Providers from "@/src/components/Providers";
 export const metadata: Metadata = {
   title: "Matheus Correia | Desenvolvedor Full Stack",
   description:
-    "Portfólio de Matheus Correia, desenvolvedor Full Stack com foco em React, Next.js, Node.js e bancos de dados.",
+    "Portfólio de Matheus Correia, Desenvolvedor Full Stack com foco em React, Next.js, Node.js e bancos de dados.",
 };
 
 export default function RootLayout({
