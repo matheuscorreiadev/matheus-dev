@@ -7,8 +7,9 @@ const skills = [
   "MySQL",
   "Git",
   "Tailwind CSS",
-  "Shadcn/ui + Radix UI",
+  "Prisma",
   "API Rest",
+  "Express",
 ];
 
 export default function Skills() {
