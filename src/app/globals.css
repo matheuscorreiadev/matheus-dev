@@ -2,53 +2,101 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(34, 211, 238, 0.14), transparent 26rem),
+    radial-gradient(circle at 80% 0%, rgba(139, 92, 246, 0.12), transparent 24rem),
+    #030712;
+  color: #f8fafc;
   font-family: Arial, Helvetica, sans-serif;
-
-  background: white;
-  color: black;
-
   transition:
     background-color 0.3s,
     color 0.3s;
 }
 
-/* DARK MODE */
-
-.dark body {
-  background: #000;
-  color: #fff;
+a,
+button {
+  outline-color: #67e8f9;
 }
 
-/* GRADIENT */
+::selection {
+  background: rgba(103, 232, 249, 0.25);
+  color: #ffffff;
+}
 
 .gradient {
+  background: linear-gradient(135deg, #22d3ee, #3b82f6, #8b5cf6);
+}
+
+.glass {
   background: linear-gradient(
     135deg,
-    #7c3aed,
-    #2563eb,
-    #06b6d4
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.035)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.spotlight {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    36rem circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%),
+    rgba(34, 211, 238, 0.13),
+    transparent 42%
   );
 }
 
-/* GLASS EFFECT */
-
-.glass {
-  -webkit-backdrop-filter: blur(16px);
-
-  backdrop-filter: blur(16px);
-
-  background: rgba(255,255,255,0.06);
-
-  border: 1px solid rgba(255,255,255,0.1);
+.particle-field {
+  position: absolute;
+  inset: 0;
+  opacity: 0.3;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.32) 1px, transparent 1px),
+    radial-gradient(circle, rgba(103, 232, 249, 0.18) 1px, transparent 1px);
+  background-position:
+    0 0,
+    28px 34px;
+  background-size:
+    76px 76px,
+    112px 112px;
+  animation: particles 28s linear infinite;
 }
 
-/* GLASS DARK */
+@keyframes particles {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
 
-.dark .glass {
-  background: rgba(20,20,20,0.6);
+  to {
+    transform: translate3d(-76px, -76px, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

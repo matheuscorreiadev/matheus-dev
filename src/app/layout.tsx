@@ -5,9 +5,9 @@ import "./globals.css";
 import Providers from "@/src/components/Providers";
 
 export const metadata: Metadata = {
-  title: "Matheus Correia | Full Stack Developer",
+  title: "Matheus Correia | Desenvolvedor Full Stack",
   description:
-    "Portfólio moderno de Matheus Correia - Desenvolvedor Full Stack",
+    "Portfólio de Matheus Correia, desenvolvedor Full Stack com foco em React, Next.js, Node.js e bancos de dados.",
 };
 
 export default function RootLayout({
@@ -16,14 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="pt-BR"
-      suppressHydrationWarning
-    >
+    <html lang="pt-BR" suppressHydrationWarning>
       <body>
-        <Providers>
-          {children}
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

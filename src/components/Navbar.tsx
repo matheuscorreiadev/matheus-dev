@@ -1,128 +1,52 @@
 "use client";
 
 import { useState } from "react";
-
 import { Menu, X } from "lucide-react";
-
-import ThemeToggle from "./ThemeToggle";
 import MobileMenu from "./MobileMenu";
+
+const navItems = [
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "Sobre" },
+  { href: "#skills", label: "Skills" },
+  { href: "#projects", label: "Projetos" },
+  { href: "#journey", label: "Jornada" },
+  { href: "#services", label: "Serviços" },
+  { href: "#contact", label: "Contato" },
+];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
     <>
-      <header
-        className="
-          fixed
-          top-0
-          w-full
-          z-50
-          glass
-          border-b
-          border-white/10
-        "
-      >
-        <div
-          className="
-            max-w-7xl
-            mx-auto
-            px-6
-            py-4
-            flex
-            items-center
-            justify-between
-          "
-        >
-
-          {/* LOGO */}
-
-          <h1
-            className="
-              text-2xl
-              font-black
-              bg-gradient-to-r
-              from-violet-600
-              via-blue-600
-              to-cyan-400
-              bg-clip-text
-              text-transparent
-            "
+      <header className="glass fixed top-0 z-50 w-full border-b border-white/10">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <a
+            href="#home"
+            className="bg-gradient-to-r from-cyan-300 via-blue-400 to-violet-400 bg-clip-text text-2xl font-black text-transparent"
           >
             Matheus.dev
-          </h1>
+          </a>
 
-          {/* DESKTOP MENU */}
+          <nav className="hidden items-center gap-6 text-sm font-medium text-zinc-300 lg:flex">
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="transition hover:text-cyan-300"
+              >
+                {item.label}
+              </a>
+            ))}
 
-          <nav
-            className="
-              hidden
-              md:flex
-              items-center
-              gap-8
-              font-medium
-            "
-          >
-            <a
-              href="#home"
-              className="hover:text-violet-400 transition"
-            >
-              Home
-            </a>
-
-            <a
-              href="#about"
-              className="hover:text-violet-400 transition"
-            >
-              Sobre
-            </a>
-
-            <a
-              href="#skills"
-              className="hover:text-violet-400 transition"
-            >
-              Skills
-            </a>
-
-            <a
-              href="#projects"
-              className="hover:text-violet-400 transition"
-            >
-              Projetos
-            </a>
-
-            <a
-              href="#contact"
-              className="hover:text-violet-400 transition"
-            >
-              Contato
-            </a>
-
-            <ThemeToggle />
           </nav>
 
-          {/* MOBILE */}
-
-          <div
-            className="
-              md:hidden
-              flex
-              items-center
-              gap-4
-            "
-          >
-            <ThemeToggle />
-
+          <div className="flex items-center gap-4 lg:hidden">
             <button
+              type="button"
+              aria-label={open ? "Fechar menu" : "Abrir menu"}
               onClick={() => setOpen(!open)}
-              className="
-                p-2
-                rounded-lg
-                border
-                border-zinc-700
-                hover:scale-105
-                transition
-              "
+              className="rounded-lg border border-white/15 p-2 transition hover:border-cyan-300/60"
             >
               {open ? <X size={22} /> : <Menu size={22} />}
             </button>
@@ -130,12 +54,7 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* MENU MOBILE */}
-
-      <MobileMenu
-        open={open}
-        setOpen={setOpen}
-      />
+      <MobileMenu open={open} setOpen={setOpen} items={navItems} />
     </>
   );
 }
