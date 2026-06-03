@@ -46,7 +46,7 @@ const hardSkillGroups: {
   {
     title: "Ferramentas",
     icon: Wrench,
-    skills: ["Git", "GitHub", "Docker", "Figma"],
+    skills: ["Git", "GitHub", "Docker", "Figma", "Jest", "Thunder Client"],
   },
   {
     title: "Deploy & Cloud",
