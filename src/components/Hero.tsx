@@ -3,6 +3,9 @@
 import { motion } from "framer-motion";
 import { Download, FolderKanban } from "lucide-react";
 
+const isProd = process.env.NODE_ENV === 'production';
+const basePath = isProd ? '/matheus-dev' : '';
+
 const stats = [
   { value: "+15", label: "Projetos Desenvolvidos" },
   { value: "+500", label: "Horas de Estudo" },
@@ -64,8 +67,8 @@ export default function Hero() {
             </a>
 
             <a
-              href="curriculo.pdf"
-              download="Curriculo_SeuNome.pdf"
+              href={`${basePath}/curriculo.pdf`}
+              download="Curriculo_Matheus_Correia.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-6 py-3 font-bold text-white transition hover:-translate-y-1 hover:border-cyan-300/60 hover:bg-white/10"
