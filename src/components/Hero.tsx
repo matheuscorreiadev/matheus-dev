@@ -65,6 +65,9 @@ export default function Hero() {
 
             <a
               href="/curriculo.pdf"
+              download="Curriculo_SeuNome.pdf" // Força o download e define o nome do arquivo baixado
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-6 py-3 font-bold text-white transition hover:-translate-y-1 hover:border-cyan-300/60 hover:bg-white/10"
             >
               <Download size={18} />
