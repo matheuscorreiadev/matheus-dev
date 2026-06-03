@@ -6,7 +6,7 @@ O objetivo deste projeto é transmitir uma imagem mais moderna e profissional, m
 
 ## Sobre mim
 
-Sou estudante de Análise e Desenvolvimento de Sistemas com foco em desenvolvimento Full Stack.
+Sou Analista e Desenvolvedor de Sistemas com foco em desenvolvimento Full Stack.
 
 Tenho experiência na construção de aplicações web modernas utilizando React, Next.js, Node.js e bancos de dados relacionais. Meu objetivo é desenvolver soluções que entreguem valor real para empresas e usuários, combinando performance, organização de código e interfaces fáceis de usar.
 

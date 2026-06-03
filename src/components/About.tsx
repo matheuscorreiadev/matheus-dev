@@ -43,7 +43,7 @@ export default function About() {
           </h2>
 
           <p className="mt-8 text-lg leading-relaxed text-zinc-400">
-            Sou estudante de Análise e Desenvolvimento de Sistemas com foco em
+            Sou Analista e Desenvolvedor de Sistemas com foco em
             desenvolvimento Full Stack. Tenho experiência na construção de
             aplicações web modernas utilizando React, Next.js, Node.js e bancos
             de dados relacionais.
