@@ -49,6 +49,8 @@ export default function Projects() {
               <div className="mt-auto flex gap-3 pt-8">
                 <a
                   href={project.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-bold text-zinc-950 transition hover:bg-cyan-100"
                 >
                   <ExternalLink size={16} />
