@@ -6,7 +6,7 @@ export const projects = [
     description:
       "Apresenta o perfil profissional, áreas de especialidade e abordagem terapêutica, contando com um fluxo direto de agendamento focado na experiência do usuário.",
     technologies: ["HTML5", "CSS3", "JavaScript", "Google Maps incorporado por iframe"],
-    imageUrl: "/matheus-dev/images/AuroraSilvaPsi-print.png",
+    imageUrl: "/images/AuroraSilvaPsi-print.png",
     demoUrl: "https://matheuscorreiadev.github.io/AuroraSilvaPsi",
     githubUrl: "https://github.com/matheuscorreiadev/AuroraSilvaPsi",
   },
@@ -17,7 +17,7 @@ export const projects = [
     description:
       "Interface fluida e responsiva que simula a experiência completa de um app de delivery, priorizando a velocidade de carregamento e a usabilidade do usuário.",
     technologies: ["HTML5", "CSS3", "JavaScript", "localStorage"],
-    imageUrl: "/matheus-dev/images/DeliveryGo-print.png",
+    imageUrl: "/images/DeliveryGo-print.png",
     demoUrl: "https://matheuscorreiadev.github.io/DeliveryGo",
     githubUrl: "https://github.com/matheuscorreiadev/DeliveryGo",
   },
@@ -28,7 +28,7 @@ export const projects = [
     description:
       "Permite o registro e categorização de movimentações financeiras, gerando um histórico claro que ajuda o usuário a entender seus hábitos de consumo e poupar com inteligência.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-    imageUrl: "/matheus-dev/images/FinanceFlow-print.png",
+    imageUrl: "/images/FinanceFlow-print.png",
     demoUrl: "https://matheuscorreiadev.github.io/Finance-Flow",
     githubUrl: "https://github.com/matheuscorreiadev/Finance-Flow",
   },
