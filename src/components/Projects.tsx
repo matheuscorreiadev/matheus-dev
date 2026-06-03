@@ -21,8 +21,15 @@ export default function Projects() {
               key={project.title}
               className="glass group flex min-h-full flex-col rounded-lg p-7 transition hover:-translate-y-2 hover:border-cyan-300/40"
             >
-              <div className="mb-6 flex h-48 items-end rounded-lg border border-white/10 bg-[linear-gradient(135deg,rgba(34,211,238,0.20),rgba(99,102,241,0.18),rgba(15,23,42,0.7))] p-5">
-                <span className="rounded-md bg-black/40 px-3 py-2 text-xs font-semibold uppercase tracking-widest text-cyan-200">
+              <div className="relative mb-6 flex h-48 items-end overflow-hidden rounded-lg border border-white/10 bg-[linear-gradient(135deg,rgba(34,211,238,0.20),rgba(99,102,241,0.18),rgba(15,23,42,0.7))] p-5">
+                {project.imageUrl ? (
+                  <img
+                    src={project.imageUrl}
+                    alt={project.title}
+                    className="absolute inset-0 h-full w-full object-cover opacity-80 transition duration-500 group-hover:scale-105"
+                  />
+                ) : null}
+                <span className="relative z-10 rounded-md bg-black/40 px-3 py-2 text-xs font-semibold uppercase tracking-widest text-cyan-200">
                   Full Stack
                 </span>
               </div>
