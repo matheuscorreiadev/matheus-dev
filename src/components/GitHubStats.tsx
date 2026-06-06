@@ -23,7 +23,7 @@ export default function GitHubStats() {
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={`https://github-readme-stats.vercel.app/api?username=${githubUser}&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=67e8f9&text_color=d4d4d8&icon_color=a78bfa&locale=pt-br`}
+              src={`https://github-readme-stats-sigma-five.vercel.app/api?username=${githubUser}&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=67e8f9&text_color=d4d4d8&icon_color=a78bfa&locale=pt-br`}
               alt="Estatísticas do GitHub de Matheus Correia"
               className="min-h-44 w-full rounded-lg object-contain"
             />
@@ -49,7 +49,7 @@ export default function GitHubStats() {
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${githubUser}&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=67e8f9&text_color=d4d4d8&locale=pt-br`}
+              src={`https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=${githubUser}&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&title_color=67e8f9&text_color=d4d4d8&locale=pt-br`}
               alt="Linguagens mais usadas no GitHub"
               className="min-h-44 w-full rounded-lg object-contain"
             />
