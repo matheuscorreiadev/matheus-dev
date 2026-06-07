@@ -19,7 +19,7 @@ export default function Contact() {
 
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a
-            href="mailto:matheus@email.com"
+            href="mailto:matheuscorreiacode@gmail.com"
             className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-bold text-zinc-950 transition hover:bg-cyan-100"
           >
             <Mail size={18} />
