@@ -19,7 +19,7 @@ export default function About() {
             <div className="gradient absolute inset-0 rounded-full opacity-30 blur-3xl" />
 
             <Image
-              src={`${basePath}/images/profile-picture.png`}
+              src="/images/profile-picture.png"
               alt="Matheus Correia"
               width={420}
               height={420}
