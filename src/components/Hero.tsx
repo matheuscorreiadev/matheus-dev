@@ -3,8 +3,12 @@
 import { motion } from "framer-motion";
 import { Download, FolderKanban } from "lucide-react";
 
+// Verifica se está rodando no ambiente de produção do Vercel
+const isVercel = process.env.NEXT_PUBLIC_VERCEL_ENV || process.env.VERCEL;
 const isProd = process.env.NODE_ENV === 'production';
-const basePath = isProd ? '/matheus-dev' : '';
+
+// Se for Vercel, não usa subpasta. Se for outra produção (GitHub Pages), usa '/matheus-dev'
+const basePath = isVercel ? '' : (isProd ? '/matheus-dev' : '');
 
 const stats = [
   { value: "+15", label: "Projetos Desenvolvidos" },
