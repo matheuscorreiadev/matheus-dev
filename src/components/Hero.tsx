@@ -67,7 +67,7 @@ export default function Hero() {
             </a>
 
             <a
-              href={`${basePath}/CurriculoMatheusCorreia.pdf`}
+              href={`${basePath}/curriculo.pdf`}
               download="Curriculo_Matheus_Correia.pdf"
               target="_blank"
               rel="noopener noreferrer"
